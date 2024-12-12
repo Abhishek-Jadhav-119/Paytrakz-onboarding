@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.transaction-page {
+  margin-left: 250px;
+  padding: 16px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+.transaction-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.add-transaction-btn {
+  padding: 10px 20px;
+  background-color: #FF9051;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.add-transaction-btn:hover {
+  background-color: #ff773d;
+}
+/* Styling for the search bar container */
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for the search input field */
+.search-bar {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+  margin-right: 10px;
+  transition: border-color 0.3s;
+}
+
+.search-bar:focus {
+  border-color: #ffa947; /* Blue border when focused */
+}
+
+/* Styling for the search button */
+.search-button {
+  padding: 15px 20px;
+  background-color: #ffa947;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Search button hover effect */
+.search-button:hover {
+  background-color: #ffa947;
+}
+
+/* Message when no transactions are found */
+.no-results {
+  text-align: center;
+  font-size: 18px;
+  color: #999;
+}

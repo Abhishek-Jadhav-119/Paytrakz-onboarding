@@ -1,0 +1,313 @@
+.reg-login-container {
+  text-align: center;
+  padding-left: 60px ;
+  padding-right: 60px;
+  
+}
+
+.paytrakz-logo img {
+  width: 14rem;
+  display: block;
+  margin-left: 11rem;
+}
+
+.reg-heading img {
+  margin-top: 2px;
+  margin-left: 12rem;
+  width: 230px;
+}
+
+.reg-login-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  column-gap: 4rem;
+  margin-top: 15px;
+}
+
+.reg-login-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  text-align: left;
+  font-size: 14px;
+  font-weight: normal;
+  color: #ff8e05;
+  margin-bottom: 0px;
+}
+
+.reg-firstName-input,
+.reg-lastName-input,
+.reg-email-input,
+
+.reg-password-input,
+.reg-confirmPassword-input,
+.reg-gender-input
+ {
+
+  margin-top: 2px;
+  padding: 5px;
+  border-radius: 10px;
+border-width: 0px;
+  background: #f5f5f5;
+  transition: 0.3s;
+}
+
+.reg-sign-in {
+  width: 30%;
+  padding: 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-top: 1.4rem;
+  margin-left: 9rem;
+  border-radius: 10px;
+  border: 2px solid #ff8c00;
+  background-color: #ffffff;
+  color: #ff8c00;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  top: -10%;
+  transition: all 0.3s ease;
+}
+
+.reg-sign-up {
+  width: 30%;
+  padding: 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-top: -2.6rem;
+  margin-left: 19.5rem;
+  border-radius: 10px;
+  border: 1px solid #ff8c00;
+  background-color: #ff8c00;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button.reg-sign-up:hover {
+  background-color: #e07b00;
+}
+
+.reg-error {
+  font-size: 12px;
+  color: red;
+  margin-top: 5px;
+  text-align: center;
+}
+.reg-countryCode-input {
+ padding: 6px;
+ font-size: 10px;
+ margin-right: 13rem;
+  background: #f5f5f5;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.reg-phone-input{
+  padding: 5px;
+  border: none;
+  width: 15rem;
+  background-color: #f5f5f5;
+  border-radius: 0px 10px 10px 0px;
+  margin: -2rem 0rem 0rem 3rem;
+  z-index: 1;
+} 
+
+.reg-gender-container {
+  margin: -0.5rem -8rem 0px 14rem;
+}
+.reg-or {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  color: #ff8c00;
+}
+
+.reg-sign-in-with {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.reg-sign-in-with img {
+  background-color: orange;
+  padding: 6px;
+  border-radius: 12px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  font-size: 1px;
+  color: #333;
+  margin-top: 30px;
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+  /* margin-left: 5px; */
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* pop up massage when user logged in */
+
+.popup {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 20px;
+  text-align: center;
+}
+
+.popup-content {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.popup-content p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.popup-content button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.popup-content button:hover {
+  background: #45a049;
+}
+/* Popup styles */
+.popup-container {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  background-color: #fb8e00;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeInOut 4s forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Blur effect */
+.blurred {
+  filter: blur(4px);
+  pointer-events: none;
+}
+.response-message {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  animation: slideFadeInOut 4s ease-in-out;
+  width: 80%;
+  max-width: 400px;
+}
+
+/* Success message styling */
+.response-message.success {
+  background: linear-gradient(135deg, #4caf50, #81c784);
+  /* Green gradient */
+  color: white;
+  border: 2px solid #388e3c;
+}
+
+/* Error message styling */
+.response-message.error {
+  background: linear-gradient(135deg, #f44336, #e57373);
+  /* Red gradient */
+  color: white;
+  border: 2px solid #d32f2f;
+}
+
+/* Warning message styling */
+.response-message.warning {
+  background: linear-gradient(135deg, #ffa726, #ffcc80);
+  /* Orange gradient */
+  color: black;
+  border: 2px solid #f57c00;
+}
+
+/* Information message styling */
+.response-message.info {
+  background: linear-gradient(135deg, #29b6f6, #4fc3f7);
+  /* Blue gradient */
+  color: white;
+  border: 2px solid #0288d1;
+}
+
+/* Animation for smooth slide and fade effect */
+@keyframes slideFadeInOut {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -30%);
+  }
+
+  10% {
+    opacity: 1;
+    transform: translate(-50%, 0%);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translate(-50%, 0%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -30%);
+  }
+}

@@ -1,0 +1,105 @@
+.project-dashboard-card {
+    width: 320px; /* Reduced from 480px */
+    height: 200px; /* Reduced from 300px */
+    background: linear-gradient(135deg, #e3f2fd, #a9ddfd);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px; /* Reduced from 16px */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Arial', sans-serif;
+    position: absolute;
+    top: 110px;
+    right: 13px;
+  }
+  
+  .project-dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .project-dashboard-title {
+    font-size: 12px; /* Reduced from 18px */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .status-dot {
+    width: 7px; /* Reduced from 10px */
+    height: 7px; /* Reduced from 10px */
+    background-color: blue;
+    border-radius: 50%;
+    margin-right: 6px; /* Reduced from 8px */
+  }
+  
+  .remaining-days {
+    font-size: 10px; /* Reduced from 14px */
+    color: red;
+    font-weight: bold;
+  }
+  
+  .days {
+    font-weight: bold;
+  }
+  
+  .progress-section {
+    margin-top: 8px; /* Reduced from 12px */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .progress-bar {
+    width: 70%; /* Kept same percentage */
+    height: 5px; /* Reduced from 8px */
+    background: #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .progress-filled {
+    width: 50%; /* Example percentage, unchanged */
+    height: 100%;
+    background: #64b5f6;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .budget {
+    font-size: 10px; /* Reduced from 14px */
+    font-weight: bold;
+  }
+  
+  .investment-table {
+    background: white;
+    border-radius: 8px;
+    padding: 2px; /* Reduced from 8px */
+    margin-top: 8px; /* Reduced from 12px */
+  }
+  
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 10px; /* Reduced from 14px */
+    padding: 4px 0; /* Reduced from 4px */
+    border-bottom: 1px solid #ddd;
+    padding-left: 3px;
+    padding-right: 3px;
+    background-color: #00a3ff;
+    border-radius: 8px;
+
+  }
+  
+  .table-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px; /* Reduced from 14px */
+    padding: 3px 0; /* Reduced from 4px */
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  

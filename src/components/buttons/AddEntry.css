@@ -1,0 +1,36 @@
+.add-entry-wrapper {
+  position: absolute;
+  top: 20px;
+  right: 150px;
+  z-index: 10;
+}
+
+.add-entry {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffb64d;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  width: 150px;
+  height: 40px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.add-entry img {
+  margin-right: 10px;
+}
+
+.add-entry:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 768px) {
+  .add-entry-wrapper {
+    right: 20px; /* Adjust button position */
+  }
+}

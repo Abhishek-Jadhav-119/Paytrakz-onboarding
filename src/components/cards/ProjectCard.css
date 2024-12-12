@@ -1,0 +1,59 @@
+.project-cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto; /* Center cards horizontally */
+  font-family: 'Poppins', sans-serif;
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap */
+  gap: 15px;
+  justify-content: center;
+}
+
+.project-card {
+  display: flex;
+  flex: 0 1 calc(50% - 15px); /* 2 cards per row */
+  max-width: 300px;
+  padding: 10px;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+  width: 24px; /* Adjust icon size */
+  height: 24px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.card-content {
+  flex: 1;
+}
+
+.card-title {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.card-value {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    flex: 0 1 calc(100% - 15px); /* Single column on smaller screens */
+  }
+}

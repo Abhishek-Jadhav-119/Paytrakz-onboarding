@@ -1,0 +1,20 @@
+.notification-icon {
+    display: flex; /* Center the bell icon within the circle */
+    align-items: center;
+    justify-content: center;
+    background-color: #ffb64d; /* Circular background */
+    width: 40px; /* Circle width */
+    height: 40px; /* Circle height */
+    border-radius: 50%; /* Makes the background circular */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    cursor: pointer; /* Pointer cursor */
+    position: absolute; /* Position it next to the Add Entry button */
+    top: 20px; /* Align vertically with Add Entry button */
+    right: 90px; /* Adjust based on the Add Entry button's right position */
+  }
+  
+  .notification-icon img {
+    width: 20px; /* Adjust bell icon size */
+    height: 20px;
+  }
+  

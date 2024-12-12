@@ -1,0 +1,87 @@
+.create-projects-wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.create-projects-form {
+  background-image: url('../../../assets/images/AddProjectFormBackgorund.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  color: #f97b22;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.create-projects-form label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.create-projects-form input,
+.create-projects-form select,
+.create-projects-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+textarea {
+  resize: none;
+  min-height: 60px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #f97b22;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.submit-btn:hover {
+  background: #f97000;
+}
+
+input[type="number"]:read-only {
+  background-color: #f4f4f4;
+}
+
+input[type="checkbox"] {
+  align-self: flex-start;
+}
